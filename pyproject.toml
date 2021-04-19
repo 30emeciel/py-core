@@ -8,10 +8,14 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+firebase-admin = "^4.5.3"
+python = "^3.9"
 Jinja2 = "^2.11.3"
 Babel = "^2.9.0"
+sendgrid = "^6.6.0"
 python-box = "^5.3.0"
+docutils = { path = "libs/docutils_0.17b2.tar.gz" }
+slack-sdk = "^3.2.1"
 
 [tool.poetry.dev-dependencies]
 

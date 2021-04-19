@@ -2,8 +2,9 @@ from datetime import datetime, timezone
 
 from box import Box
 
+TEST_TPL = "test_fr.txt"
 if __name__ == "__main__":
-    from notification_message_templates import generate_notification_message, NEW_RESERVATION
+    from tpl import generate_notification_message
 
     pax = Box({
         "name": "Pax name"
@@ -18,7 +19,7 @@ if __name__ == "__main__":
         "pax": pax,
         "request": request,
     }
-    txt = generate_notification_message(NEW_RESERVATION, data)
+    txt = generate_notification_message(TEST_TPL, data)
     print(txt)
 
     request = Box({
@@ -30,5 +31,5 @@ if __name__ == "__main__":
         "request": request,
     }
 
-    txt = generate_notification_message(NEW_RESERVATION, data)
+    txt = generate_notification_message(TEST_TPL, data)
     print(txt)

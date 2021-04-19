@@ -1,10 +1,5 @@
 from babel.dates import format_date
-from jinja2 import Environment, select_autoescape, PackageLoader
-
-settings_overrides = {
-
-}
-
+from jinja2 import Environment, select_autoescape, PackageLoader, ChoiceLoader, FileSystemLoader
 
 SLACK_DATE_FORMAT = "date"
 
@@ -18,7 +13,10 @@ def date_format(d, fmt="medium"):
 
 
 env = Environment(
-    loader=PackageLoader("core", "templates"),
+    loader=ChoiceLoader([
+        FileSystemLoader("templates"),
+        PackageLoader("core", "templates"),
+        ]),
     autoescape=select_autoescape(
         enabled_extensions=('html', 'htm', 'xml'),
         default_for_string=False,
@@ -28,3 +26,7 @@ env = Environment(
 env.filters["dateformat"] = date_format
 env.filters["slackdateformat"] = slack_date_format
 
+
+def render(template, data):
+    tpl = env.get_template(template)
+    return tpl.render(data)
