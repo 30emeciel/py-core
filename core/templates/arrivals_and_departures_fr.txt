@@ -1,0 +1,6 @@
+{% if arrivals -%}
+Aujourd'hui, nous accueillons _{{ arrivals|join(", ") }}_.
+{%- endif %}
+{% if departures -%}
+Ces colivers nous quittent mais nous les reverrons bientôt :smiling_face_with_tear: _{{ departures|join(", ") }}_.
+{%- endif %}
