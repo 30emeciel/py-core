@@ -438,7 +438,7 @@ pyasn1 = ">=0.1.3"
 
 [[package]]
 name = "sendgrid"
-version = "6.6.0"
+version = "6.7.0"
 description = "Twilio SendGrid library for Python"
 category = "main"
 optional = false
@@ -458,7 +458,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "slack-sdk"
-version = "3.4.2"
+version = "3.5.0"
 description = "The Slack API Platform SDK for Python"
 category = "main"
 optional = false
@@ -500,7 +500,7 @@ brotli = ["brotlipy (>=0.6.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "62ed2296a5a1ec3a7fd02c3bc116d73b8990d5912419733d2748420c8c2cb8ae"
+content-hash = "c2ca2a2080b029b733378b233ac35e77dbdfff5b5ecae8731b1243439c348542"
 
 [metadata.files]
 babel = [
@@ -873,16 +873,16 @@ rsa = [
     {file = "rsa-4.7.2.tar.gz", hash = "sha256:9d689e6ca1b3038bc82bf8d23e944b6b6037bc02301a574935b2dd946e0353b9"},
 ]
 sendgrid = [
-    {file = "sendgrid-6.6.0-py3-none-any.whl", hash = "sha256:e422c8263563ac7d664066d2f87b90bcb005b067eb7c33a9b1396442b2ed285b"},
-    {file = "sendgrid-6.6.0.tar.gz", hash = "sha256:2eb1dcb1f7d8656eed4db586e428c2c86f347590b8511d7f92993882d0e4fab9"},
+    {file = "sendgrid-6.7.0-py3-none-any.whl", hash = "sha256:273bdc0abec649bf6319df7b6267980f79e53ab64e92906d65eea6d4330d00b4"},
+    {file = "sendgrid-6.7.0.tar.gz", hash = "sha256:74b0dcf9a79188948f61f456bd1bf67ffa676a5d388aba1c76bff516566d7084"},
 ]
 six = [
     {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
     {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
 ]
 slack-sdk = [
-    {file = "slack_sdk-3.4.2-py2.py3-none-any.whl", hash = "sha256:5e4f89971e8329a81f57e621e1ea273b8eda67797eb431355e384c296be82553"},
-    {file = "slack_sdk-3.4.2.tar.gz", hash = "sha256:befc1365df93b84eac4592b9a2183411a748ecf662f5c51ce2fa7fdc3f5ee89f"},
+    {file = "slack_sdk-3.5.0-py2.py3-none-any.whl", hash = "sha256:66db2e834e397af4ccb0da9f7ab8aeb6f65a81308e32a6f59e7eafef23f4dbeb"},
+    {file = "slack_sdk-3.5.0.tar.gz", hash = "sha256:b1748fe130f46d9a8595b9260bc9deb25727a272043b1a8240a935e3c759ac38"},
 ]
 starkbank-ecdsa = [
     {file = "starkbank-ecdsa-1.1.0.tar.gz", hash = "sha256:423f81bb55c896a3c85ee98ac7da98826721eaee918f5c0c1dfff99e1972da0c"},
