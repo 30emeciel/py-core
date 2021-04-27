@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "core"
-version = "v2"
+version = "3"
 description = ""
 authors = ["Tony <tony.lbvre@gmail.com>"]
 packages = [
