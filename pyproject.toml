@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "core"
-version = "3"
+version = "4"
 description = ""
 authors = ["Tony <tony.lbvre@gmail.com>"]
 packages = [
@@ -8,13 +8,13 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-firebase-admin = "^4.5.3"
+firebase-admin = "^5.0.0"
 python = "^3.9"
 Jinja2 = "^2.11.3"
 Babel = "^2.9.0"
 sendgrid = "^6.7.0"
 python-box = "^5.3.0"
-slack-sdk = "^3.5.0"
+slack-sdk = "^3.5.1"
 docutils = "^0.17.1"
 
 [tool.poetry.dev-dependencies]
