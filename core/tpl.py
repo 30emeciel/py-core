@@ -12,7 +12,15 @@ def date_format(d, fmt="medium"):
     return format_date(d, locale='fr', format=fmt)
 
 
+def pluralize(number, singular='', plural='s'):
+    if number == 1:
+        return singular
+    else:
+        return plural
+
+
 env = Environment(
+    extensions=['jinja2.ext.i18n'],
     loader=ChoiceLoader([
         FileSystemLoader("templates"),
         PackageLoader("core", "templates"),
@@ -25,6 +33,7 @@ env = Environment(
 )
 env.filters["dateformat"] = date_format
 env.filters["slackdateformat"] = slack_date_format
+env.filters["pluralize"] = pluralize
 
 
 def render(template, data):
