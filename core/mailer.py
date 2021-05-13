@@ -14,7 +14,6 @@ class Mailer:
         message = Mail()
         message.from_email = From("admin@30emeciel.fr", "Coliv'app")
         message.to = To(to_email, to_name)
-        message.cc = Cc("admin@30emeciel.fr", "Coliv'app")
         message.subject = Subject(subject)
         message.content = Content(
             MimeType.html, html_content)
